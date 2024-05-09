@@ -1,4 +1,4 @@
-package basic.datastructure;
+package basic.datastructure.구간합;
 
 import java.util.Scanner;
 
