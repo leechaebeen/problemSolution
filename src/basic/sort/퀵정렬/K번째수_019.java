@@ -44,17 +44,20 @@ public class K번째수_019 {
 
     // 피벗 구하기 함수
     private static int partition(int[] A, int S, int E) {
-        // startIndex 와 endIndex 가 만난 경우
+        // 데이터가 두 개인 경우 바로 비교하여 정렬
         if(S + 1 == E) {
             if(A[S] > A[E]) {
                 swap(A, S, E);
             }
             return E; // 새 피벗의 인덱스
         }
-        int M = (S+E)/2;
-        swap(A, S, M);  // 중앙값의 1번째 요소로 이동하기
-        int pivot = A[S];
-        int i = S + 1, j= E;
+        int M = (S+E)/2;    // 중앙값
+        swap(A, S, M);      // 중앙값을 시작 위치와 swap
+        int pivot = A[S];   // 피벗을 시작  위치 값 A[S] 로 저장
+
+        int i = S + 1;  // 시작점, 종료점
+        int j= E;
+
         while(i<=j) {
             // 피벗보다 작은 수가 나올 때까지 j--
             while(pivot < A[j] && j > 0) {
@@ -66,12 +69,13 @@ public class K번째수_019 {
                 i++;
             }
 
+            // 찾은 i 와 j 데이터를 swap
             if(i <= j) {
                 swap(A, i++, j--);
             }
         }
 
-        // i == j 일 때 피벗의 값을 양쪽으로 분리한 가운데에 오도록 설정하기
+        // 나눠진 두 그룹의 경계 index 에 피벗 데이터를 설정하기
         A[S] = A[j];
         A[j] = pivot;
         return j;   // 새 피벗의 인덱스
