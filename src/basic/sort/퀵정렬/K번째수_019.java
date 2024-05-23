@@ -53,7 +53,7 @@ public class K번째수_019 {
         }
         int M = (S+E)/2;    // 중앙값
         swap(A, S, M);      // 중앙값을 시작 위치와 swap
-        int pivot = A[S];   // 피벗을 시작  위치 값 A[S] 로 저장
+        int pivot = A[S];   // 피벗을 시작 위치 값 A[S] 로 저장
 
         int i = S + 1;  // 시작점, 종료점
         int j= E;
@@ -69,7 +69,8 @@ public class K번째수_019 {
                 i++;
             }
 
-            // 찾은 i 와 j 데이터를 swap
+            // 두 인덱스가 만나면 (startIndex 값이 피벗보다 크고 endIndex 값이 피벗보다 작다는 뜻)
+            // 찾은 i 와 j 데이터를 swap 하고 한 칸 이동
             if(i <= j) {
                 swap(A, i++, j--);
             }
