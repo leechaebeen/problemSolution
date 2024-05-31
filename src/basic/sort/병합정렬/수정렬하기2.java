@@ -41,6 +41,7 @@ public class 수정렬하기2 {
         merge_sort(s, m);      // 앞 그룹
         merge_sort(m+1, e); // 뒤 그룹
 
+        // 정렬한 값을 tmp 에 초기화
         for(int i=s; i<=e; i++) {
             tmp[i]=A[i];
         }

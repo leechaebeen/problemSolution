@@ -15,10 +15,14 @@ public class 절댓값힙구현하기_014 {
         PriorityQueue<Integer> MyQueue = new PriorityQueue<>((o1, o2) -> {
             int first_abs = Math.abs(o1);
             int second_abs = Math.abs(o2);
+
+            // 절댓값이 같으면 음수 우선 정렬하기
             if(first_abs == second_abs) {
-                return o1 > o2 ? 1 : -1;       // 절댓값이 같으면 음수 우선 정렬하기
+                // return o1 > o2 ? 1 : -1;
+                return o1.compareTo(o2) * -1; // 되는지 확인
             } else {
-                return first_abs - second_abs; // 절댓값을 기준으로 정렬하기
+                // 절댓값을 기준으로 정렬하기
+                return first_abs - second_abs;
             }
         });
 

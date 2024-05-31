@@ -33,8 +33,8 @@ public class 버블소트_016 {
         int max = 0;
         for(int i=0; i<N; i++) {
             // (정렬 전 index - 정렬 후 index) 계산의 최댓값 저장하기
-            if(max < A[i].idx -i) {
-                max = A[i].idx -i;
+            if(max < A[i].idx - i) {
+                max = A[i].idx -i; // 정렬 전 index - 현재 인덱스
             }
         }
         System.out.println(max + 1); // swap 일어나지 않는 경우 더함(1)

@@ -42,7 +42,7 @@ public class 버블소트프로그램2 {
         mergeSort(s, m);        // 앞 그룹 병합 정렬
         mergeSort(m+1, e);   // 뒷 그룹 병합 정렬
 
-        // tmp 값 초기화
+        // 정렬한 값을 tmp 에 초기화
         for(int i=s; i <= e; i++) {
             tmp[i] = A[i];
         }

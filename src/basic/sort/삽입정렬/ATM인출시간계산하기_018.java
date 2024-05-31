@@ -47,8 +47,8 @@ public class ATM인출시간계산하기_018 {
 
         // 합 구하기
         int sum = 0;
-        for(int i=0; i<S.length; i++) {
-            sum += S[i];
+        for (int j : S) {
+            sum += j;
         }
 
         System.out.println(sum);
