@@ -8,6 +8,13 @@ public class 제곱이아닌수_040 {
 
     public static void main(String[] args) {
 
+        String text = "Java technology is both a programming language and a platform.";
+        System.out.println(text.lastIndexOf('a'));
+        System.out.println(text.lastIndexOf("a "));
+        System.out.println(text.lastIndexOf('a', 20));
+        System.out.println(text.lastIndexOf("a ", 20));
+        System.out.println(text.lastIndexOf("z"));
+
         // 입력값 초기화
         Scanner sc = new Scanner(System.in);
         long min = sc.nextLong();
