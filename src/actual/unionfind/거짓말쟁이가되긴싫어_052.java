@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// 진실을 아는 사람1과 모르는 사람 2가 같은 파티에 있으면
+// 진실을 말해야 하므로 모르는 사람2도 진실을 알게된다. 그래서 같은 집합에 들어가는 것.
 public class 거짓말쟁이가되긴싫어_052 {
 
     private static int[] parent; // 대표 노드 저장 배열
@@ -58,7 +60,6 @@ public class 거짓말쟁이가되긴싫어_052 {
             int cur = party[i].get(0);
             for(int j=0; j<truePeople.length; j++) {
                 if(find(cur) == find(truePeople[j])) {
-                    System.out.println(party[i].toString());
                     isPossible = false;
                     break;
                 }
