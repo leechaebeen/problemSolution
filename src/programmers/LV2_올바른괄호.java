@@ -14,7 +14,8 @@ import java.util.Stack;
  * 문자열 s의 길이 : 100,000 이하의 자연수
  * 문자열 s는 '(' 또는 ')' 로만 이루어져 있습니다.
  */
-public class 올바른괄호 {
+public class LV2_올바른괄호
+{
 
     public static void main(String[] args) {
         String str = "(())()";
