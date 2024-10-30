@@ -12,7 +12,7 @@ import java.util.List;
  * 제한 조건
  * s에는 둘 이상의 정수가 공백으로 구분되어 있습니다.
  */
-public class LV2_최댓값과최솟값
+public class Lv2_최댓값과최솟값
 {
 
     public static void main(String[] args)  {

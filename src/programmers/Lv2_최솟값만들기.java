@@ -1,14 +1,14 @@
 package programmers;
 
 import java.util.Arrays;
-import java.util.SortedMap;
 
 /**
  * https://school.programmers.co.kr/learn/courses/30/lessons/12941#
  * 그리디 알고리즘,
  * 작은 수와 큰 수를 곱할수록 최종 합이 더 작아진다.
  */
-public class LV2_최솟값만들기 {
+public class Lv2_최솟값만들기
+{
 
     public static void main(String[] args) {
         int[] A = {1,4,2};
